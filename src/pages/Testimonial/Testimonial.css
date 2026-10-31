@@ -1,0 +1,29 @@
+.testimonial-container{
+    width:90%;
+    margin:50px auto;
+    text-align:center;
+}
+
+.testimonial-container h1{
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.testimonial-card{
+    background:#edb0dd;
+    padding:25px;
+    margin:20px auto;
+    border-radius:10px;
+    width:70%;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.testimonial-card h3{
+    margin-bottom:15px;
+    color:#222;
+}
+
+.testimonial-card p{
+    color:#555;
+    line-height:28px;
+}

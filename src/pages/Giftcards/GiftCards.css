@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+}
+
+.gift-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 7%;
+  background: #fffafc;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+
+.gift-header {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 40px;
+}
+
+.gift-tag {
+  display: inline-block;
+  color: #e84393;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.gift-header h1 {
+  font-size: 42px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.gift-header h1 span {
+  color: #e84393;
+}
+
+.gift-header p {
+  font-size: 16px;
+  color: #777;
+  line-height: 28px;
+}
+
+/* Banner */
+
+.gift-banner {
+  width: 100%;
+  min-height: 230px;
+  border-radius: 20px;
+  background: linear-gradient(120deg, #e84393, #a55eea);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 30px;
+  margin-bottom: 60px;
+}
+
+.gift-banner-content h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.gift-banner-content p {
+  font-size: 17px;
+  line-height: 27px;
+}
+
+.gift-banner-content span {
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Gift Section */
+
+.gift-section {
+  text-align: center;
+}
+
+.gift-section > h2 {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.gift-subtitle {
+  color: #777;
+  margin-bottom: 35px;
+}
+
+/* Gift Grid */
+
+.gift-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.gift-card {
+  padding: 25px 20px;
+  border-radius: 18px;
+  color: white;
+  text-align: left;
+  min-height: 290px;
+  transition: 0.3s;
+  border: 3px solid transparent;
+}
+
+.gift-card:hover {
+  transform: translateY(-8px);
+}
+
+.gift-card.selected {
+  border-color: #222;
+  transform: translateY(-5px);
+}
+
+.purple {
+  background: linear-gradient(135deg, #7868e6, #9b59b6);
+}
+
+.pink {
+  background: linear-gradient(135deg, #ff6b81, #e84393);
+}
+
+.orange {
+  background: linear-gradient(135deg, #ff9f43, #ee5a24);
+}
+
+.blue {
+  background: linear-gradient(135deg, #3498db, #3867d6);
+}
+
+.gift-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gift-icon {
+  font-size: 32px;
+}
+
+.gift-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.gift-card h3 {
+  font-size: 19px;
+  margin-top: 25px;
+}
+
+.gift-card h1 {
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.gift-card p {
+  font-size: 13px;
+  line-height: 21px;
+  min-height: 42px;
+}
+
+/* Select Button */
+
+.select-gift-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.select-gift-btn:hover {
+  background: #222;
+  color: white;
+}
+
+/* Selected Gift */
+
+.selected-gift {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.selected-gift h3 {
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.selected-gift p {
+  color: #e84393;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.selected-gift button {
+  background: #e84393;
+  color: white;
+  border: none;
+  padding: 13px 30px;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+/* Benefits */
+
+.gift-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin: 70px 0 40px;
+  text-align: center;
+}
+
+.gift-benefits div {
+  padding: 25px 15px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.gift-benefits span {
+  font-size: 35px;
+}
+
+.gift-benefits h3 {
+  font-size: 17px;
+  margin: 15px 0 10px;
+}
+
+.gift-benefits p {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Back Button */
+
+.gift-back-btn {
+  display: block;
+  margin: 30px auto 0;
+  padding: 13px 28px;
+  border: none;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.gift-back-btn:hover {
+  background: #e84393;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+  .gift-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gift-page {
+    padding: 35px 5%;
+  }
+
+  .gift-header h1 {
+    font-size: 30px;
+  }
+
+  .gift-banner-content h2 {
+    font-size: 27px;
+  }
+
+  .gift-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gift-benefits {
+    grid-template-columns: 1fr;
+  }
+}

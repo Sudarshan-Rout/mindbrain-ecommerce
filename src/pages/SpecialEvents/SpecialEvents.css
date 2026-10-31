@@ -1,0 +1,232 @@
+.special-container {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+
+    background: linear-gradient(
+        135deg,
+        #fff3d6,
+        #ffdf9e,
+        #ffb347,
+        #ffcc70
+    );
+
+    overflow: hidden;
+}
+
+/* Main Content */
+
+.diwali-content {
+    width: 100%;
+    max-width: 850px;
+    padding: 45px 25px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.65);
+
+    border: 2px solid #e6a23c;
+
+    box-shadow: 0 10px 35px rgba(120, 50, 0, 0.15);
+
+    animation: fadeIn 1s ease;
+}
+
+/* Diya Icons */
+
+.diya-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    animation: glow 2s infinite alternate;
+}
+
+/* Heading */
+
+.special-container h1 {
+    font-size: 52px;
+    color: #8b2500;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.special-container h2 {
+    font-size: 34px;
+    color: #d62828;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Offer Box */
+
+.offer-box {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px 45px;
+    margin-bottom: 25px;
+
+    background: linear-gradient(
+        135deg,
+        #a4161a,
+        #d62828
+    );
+
+    border: 3px solid #ffcc33;
+    border-radius: 15px;
+
+    color: white;
+
+    box-shadow: 0 5px 20px rgba(120, 20, 10, 0.2);
+}
+
+.offer-box span {
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.offer-box h3 {
+    font-size: 55px;
+    margin: 8px 0;
+    color: #ffdf70;
+}
+
+/* Description */
+
+.special-container p {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto 25px;
+
+    font-size: 18px;
+    color: #663300;
+    line-height: 30px;
+}
+
+/* Decoration */
+
+.diwali-decoration {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/* Button */
+
+.special-container button {
+    padding: 14px 40px;
+
+    background: #a4161a;
+    color: white;
+
+    border: 2px solid #ffcc33;
+    border-radius: 30px;
+
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.special-container button:hover {
+    background: #720e13;
+    transform: scale(1.07);
+
+    box-shadow: 0 5px 20px rgba(120, 20, 10, 0.3);
+}
+
+/* Footer */
+
+.diwali-footer {
+    margin-top: 25px;
+    color: #8b2500;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Animations */
+
+@keyframes glow {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.08);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .diwali-content {
+        padding: 35px 18px;
+    }
+
+    .special-container h1 {
+        font-size: 38px;
+    }
+
+    .special-container h2 {
+        font-size: 27px;
+    }
+
+    .offer-box h3 {
+        font-size: 42px;
+    }
+
+    .special-container p {
+        width: 90%;
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .diya-icon {
+        font-size: 32px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .special-container h1 {
+        font-size: 32px;
+    }
+
+    .special-container h2 {
+        font-size: 23px;
+    }
+
+    .offer-box {
+        padding: 18px 30px;
+    }
+
+    .offer-box h3 {
+        font-size: 36px;
+    }
+
+    .special-container button {
+        font-size: 16px;
+        padding: 12px 30px;
+    }
+
+}

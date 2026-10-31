@@ -1,0 +1,43 @@
+.shoes-page{
+    width:90%;
+    margin:40px auto;
+}
+
+.shoe-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.shoe-card{
+    border:1px solid #ddd;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+}
+
+.shoe-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.shoe-card button{
+    padding:10px 20px;
+    border:none;
+    background:black;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.product-actions{
+    display:flex;
+    gap:12px;
+    justify-content:center;
+    margin-top:12px;
+}
+
+.shoe-card .product-actions + *{
+    margin-top:12px;
+}
