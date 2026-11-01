@@ -52,7 +52,7 @@ function Dashboard() {
 
       try {
 
-        const res = await fetch("http://localhost:8000/dashboard", {
+        const res = await fetch("https://mindbrain-ecommerce.onrender.com/dashboard", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

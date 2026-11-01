@@ -6,7 +6,7 @@ import hat3 from "../../assets/hat3.jpg";
 import hat4 from "../../assets/hat4.jpg";
 import hat5 from "../../assets/hat5.jpg";
 
-const API_URL = "http://localhost:8000";
+const API_URL = "https://mindbrain-ecommerce.onrender.com";
 
 const parsePrice = (price) => {
   if (typeof price === "number") return price;
@@ -92,7 +92,7 @@ function Hats() {
   useEffect(() => {
     const fetchHats = async () => {
       try {
-        const res = await fetch("http://localhost:8000/hats");
+        const res = await fetch("https://mindbrain-ecommerce.onrender.com/hats");
         const data = await res.json();
 
         if (!res.ok) {

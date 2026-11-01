@@ -1,7 +1,7 @@
 ﻿import "./Wishlist.css";
 import { useEffect, useState } from "react";
 
-const API_URL = "http://localhost:8000";
+const API_URL = "https://mindbrain-ecommerce.onrender.com";
 
 function Wishlist() {
   const [wishlist, setWishlist] = useState([]);

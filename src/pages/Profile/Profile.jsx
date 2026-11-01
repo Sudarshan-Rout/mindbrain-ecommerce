@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Profile from "../../assets/Profile.jpg";
 
-const API_URL = "http://localhost:8000";
+const API_URL = "https://mindbrain-ecommerce.onrender.com";
 
 function ProfilePage() {
   const navigate = useNavigate();

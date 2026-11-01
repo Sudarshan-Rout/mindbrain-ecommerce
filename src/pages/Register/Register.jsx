@@ -19,7 +19,7 @@ const handleSubmit = async (e) => {
       return alert("Passwords do not match");
 
     try {
-      const res = await fetch("http://localhost:8000/register", {
+      const res = await fetch("https://mindbrain-ecommerce.onrender.com/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

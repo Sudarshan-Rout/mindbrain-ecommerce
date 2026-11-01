@@ -6,7 +6,7 @@ import shoes3 from "../../assets/shoes3.jpg";
 import shoes4 from "../../assets/shoes4.jpg";
 import shoes5 from "../../assets/shoes5.jpg";
 
-const API_URL = "http://localhost:8000";
+const API_URL = "https://mindbrain-ecommerce.onrender.com";
 
 const fallbackShoes = [
   { id: 1, image: shoes1, name: "BJD shoe", price: "₹4" },
@@ -92,7 +92,7 @@ function Shoes() {
   useEffect(() => {
     const fetchShoes = async () => {
       try {
-        const res = await fetch("http://localhost:8000/shoes");
+        const res = await fetch("https://mindbrain-ecommerce.onrender.com/shoes");
         const data = await res.json();
 
         if (!res.ok) {

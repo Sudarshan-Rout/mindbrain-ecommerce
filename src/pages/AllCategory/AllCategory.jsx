@@ -27,7 +27,7 @@ import hat4 from "../../assets/hat4.jpg";
 import hat5 from "../../assets/hat5.jpg";
 
 
-const API_URL = "http://localhost:8000";
+const API_URL = "https://mindbrain-ecommerce.onrender.com";
 
 
 /* ================= FALLBACK PRODUCTS ================= */

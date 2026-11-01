@@ -6,7 +6,7 @@ import jacket3 from "../../assets/jacket3.avif";
 import jacket4 from "../../assets/jacket4.avif";
 import jacket5 from "../../assets/jacket5.avif";
 
-const API_URL = "http://localhost:8000";
+const API_URL = "https://mindbrain-ecommerce.onrender.com";
 
 const parsePrice = (price) => {
   if (typeof price === "number") return price;
@@ -92,7 +92,7 @@ function Jackets() {
   useEffect(() => {
     const fetchJackets = async () => {
       try {
-        const res = await fetch("http://localhost:8000/jackets");
+        const res = await fetch("https://mindbrain-ecommerce.onrender.com/jackets");
         const data = await res.json();
 
         if (!res.ok) {
